@@ -1,0 +1,22 @@
+<div class='container'>
+    <div id='bookshelf-title' class='row'>
+        <div>
+            Bookshelf
+            <div class='col-md-12' *ngIf='this.loginStatus === false' id='signInToSave'>You will need to create and log into an account to save the list of chosen books logged here for later reference.</div>
+            <div class='col-md-6' *ngIf='this.loginStatus === true && this.clickedBooksLog.length > 0'><button type='button' class='btn btn-sm btn-success' (click)='getBookshelfToSave($event)'>Save bookshelf</button></div>
+            <div class='col-md-6' *ngIf='this.loginStatus === true'><button type='button' class='btn btn-sm btn-success' (click)='loadBookshelf($event)'>Load bookshelf</button></div>
+        </div>
+    </div>
+    <div id='loggedBooksList' *ngIf='this.clickedBooksLog.length > 0'></div>
+    <div *ngFor='let book of this.clickedBooksLog' (click)='getBookFromShelf($event)'>
+        <div class='loggedBook' id='{{ book[2] }}'>
+            <div class='row'>
+                <div class='col-md-8'>
+                    <h5><span><img class='chosenBookLogFlag' src='../../../assets/images/{{ book[1] }}.png'></span> <i>{{ book[3] | uppercase }}</i></h5>
+                    <h6>{{ book[0] }}</h6>
+                </div>
+                <div class='col-md-4'><button class='btn btn-sm btn-warning' (click)='removeBookFromShelf($event)'>Remove</button></div>
+            </div>
+        </div>
+    </div>
+</div>

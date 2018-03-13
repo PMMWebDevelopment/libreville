@@ -1,4 +1,4 @@
-# Ngutenberg
+# Libreville
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
 
@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Steps taken to build this app
+
+1. Installed jQuery and Bootstrap.
+2. Created database through Firebas. Began by populating languages table to feed the menu in the catalogue section of the library.
+3. Created a library service in the library folder to take care of all calls on the backend database (and also the Gutenber API).
+4. Set up Authors and Bookshelf Components
+5. Followed instructions at https://itnext.io/step-by-step-complete-firebase-authentication-in-angular-2-97ca73b8eb32 to install user authentication with Firebase. Also Github repository at https://github.com/hellotunmbi/angular2-authentication-firebase

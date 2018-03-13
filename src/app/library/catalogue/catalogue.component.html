@@ -1,0 +1,17 @@
+<div id='catalogue-column'></div>
+<div id='language-select'>
+    <select class='custom-select' (change)='getAuthorsThisLanguage($event)'>
+      <option selected>Select language</option>
+      <option *ngFor='let language of languages'>{{ language.language_name }}</option>
+    </select>
+</div>
+<div id='catalogue-authors-this-language'>
+    <mat-accordion id='authorsAccordion'>
+        <mat-expansion-panel *ngFor='let author of authors'>
+            <mat-expansion-panel-header (click)='getBooksByThisAuthor($event)'>
+                {{ author.author_displayname }}
+            </mat-expansion-panel-header>
+            <p id='book-title' *ngFor='let book of books' (click)='getThisBook($event)'>{{ book.book_title }}</p>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

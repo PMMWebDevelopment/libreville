@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('ngutenberg App', () => {
+describe('libreville App', () => {
   let page: AppPage;
 
   beforeEach(() => {

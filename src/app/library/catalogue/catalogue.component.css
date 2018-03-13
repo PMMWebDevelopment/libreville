@@ -1,0 +1,53 @@
+#catalogue-column {
+    min-width: 10%;
+    max-width: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#language-select {
+    width: 160px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.custom-select {
+    background-color: rgba(0, 0, 0, 0.65);
+    border: none;
+    color: white;
+}
+
+img {
+    height: 15px;
+    width: 20px;
+}
+
+#catalogue-authors-this-language {
+    overflow-y: scroll;
+    height: 480px;
+}
+
+#authorsAccordion {
+    text-align: left;
+}
+
+#authorName {
+    height: 20px;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+#book-title {
+    height: 20px;
+    font-size: 12px;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    cursor: pointer;
+}

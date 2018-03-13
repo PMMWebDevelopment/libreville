@@ -1,0 +1,61 @@
+<div class='app-home'>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-8 offset-md-2'>
+                <h1><span class='front-page-logo'><img src='./assets/images/LibrevilleLogo.png'></span>Libreville</h1>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-8 offset-md-2'>
+                <h3>Learning a second language?</h3>
+                <p>Read the classics of world literature, right here, right now!</p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-8 offset-md-2'>
+                <span class='front-page-flag'><img src='./assets/images/bg.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/cn.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/cz.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/de.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/dk.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/es.png'></span>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-8 offset-md-2'>
+                <span class='front-page-flag'><img src='./assets/images/fi.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/fr.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/gr.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/hu.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/ie.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/is.png'></span>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-8 offset-md-2'>
+                <span class='front-page-flag'><img src='./assets/images/it.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/jp.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/nl.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/no.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/ph.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/pl.png'></span>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-8 offset-md-2'>
+                <span class='front-page-flag'><img src='./assets/images/pt.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/ro.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/rs.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/ru.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/se.png'></span>
+                <span class='front-page-flag'><img src='./assets/images/walesflag.png'></span>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-8 offset-md-2'>
+                <button *ngIf='!(authService.user | async); else enterLibrary' class='btn btn-primary' id='tryAsGuest' routerLink='library'>Try it out as a guest</button>
+                <ng-template #enterLibrary><button class='btn btn-primary' routerLink='library'>Enter Library</button></ng-template>
+            </div>
+        </div>
+    </div>
+</div>

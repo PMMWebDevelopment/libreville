@@ -1,0 +1,24 @@
+{
+    "rules": {
+        "authors": {
+            ".indexOn": ["author_language"],
+            ".read": true,
+            ".write": "auth != null"
+        },
+        "books": {
+            ".indexOn": ["book_author"],
+            ".read": true,
+            ".write": "auth != null"
+        },
+        "bookshelves": {
+            ".indexOn": ["user"],
+            ".read": true,
+            ".write": true
+        },
+        "languages": {
+            ".indexOn": ["language_name"],
+            ".read": true,
+            ".write": "auth != null"
+        }
+    }
+}

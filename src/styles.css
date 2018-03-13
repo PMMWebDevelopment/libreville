@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+@font-face {
+    font-family: "Fira-Sans";
+    src: url("../src/assets/fonts/Fira_Sans/FiraSans-Regular.ttf") format("truetype");
+}
+
+body {
+    background-image: url("./assets/images/architecture-1834222_1920.jpg") center center fixed;
+    background-size: cover;
+    font-family: "Fira-Sans", sans-serif;
+    color: white;
+}
+
+.form-container {
+    background: white;
+    padding: 3.5em;
+    width: 500px;
+    position: fixed;
+    left: 45%;
+    margin-left: -250px;
+}
+
+.google {
+    padding: 0.5em;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    border: 1px solid #95989a;
+    background: #fff;
+    background-size: 25px;
+}
+
+.email {
+    padding: 0.5em;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    background: #ececec;
+    background-size: 25px;
+}
+
+.create-account-txt {
+    text-align: center;
+    display: block;
+    margin: 15px 0;
+}
+
+.auth-btn {
+    background: #3b8598;
+    color: white;
+}
+
+input.input-txt {
+    background: #fff !important;
+    padding: 0.5em 1em;
+    font-size: 1.3em;
+    border: 1px solid #bbbbbb;
+    width: 90%;
+    margin-bottom: 1em;
+}

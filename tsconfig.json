@@ -8,8 +8,14 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
+    "allowJs": true,
     "typeRoots": [
       "node_modules/@types"
+    ],
+    "types": [
+      "firebase",
+      "node",
+      "lodash"
     ],
     "lib": [
       "es2017",

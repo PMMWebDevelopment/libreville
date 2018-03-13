@@ -1,0 +1,43 @@
+#bookshelf-title {
+    margin-top: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+#signInToSave {
+    font-size: 12px;
+}
+
+.loggedBook {
+    cursor: pointer;
+}
+
+.loggedBooksList {
+    overflow-y: scroll;
+    height: 480px;
+}
+
+.loggedBook h5 {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.loggedBook h6 {
+    font-size: 14px;
+    color: rgb(160, 160, 160);
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.chosenBookLogFlag {
+    width: 20px;
+    height: 15px;
+}
+
+.saveCheckboxes {
+    margin-top: 20px;
+    font-size: 12px;
+}
